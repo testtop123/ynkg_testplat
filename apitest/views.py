@@ -22,6 +22,7 @@ def login(request):
             return response
         else:
             return render(request,'login.html',{'error':'username of password error'})
-
     return render(request,'login.html')
 
+def home(request):
+    return render(request,'home.html')
